@@ -23,15 +23,15 @@ class ventana (Frame):
         frame1 = Frame(self, bg="#bfdaff")
         frame1.place(x=0, width=210, height=768)
 
-        #creacion del bonton de Nuevo
+        #Bonton de Nuevo
         self.btnNuevo=Button(frame1, text="Nuevo", command=self.fNuevo, bg="blue", fg="white")
         self.btnNuevo.place(x=45, y=30, width=110, height=50)
 
-        #creacion del bonton de Modificar
+        #Boton de Modificar
         self.btnModificar=Button(frame1, text="Modificar", command=self.fNuevo, bg="blue", fg="white")
         self.btnModificar.place(x=45, y=90, width=110, height=50)
 
-        #creacion del bonton de Eliminar
+        #Bonton de Eliminar
         self.btnEliminar=Button(frame1, text="Eliminar", command=self.fNuevo, bg="blue", fg="white")
         self.btnEliminar.place(x=45, y=150, width=110, height=50)
 
@@ -41,7 +41,7 @@ class ventana (Frame):
 
         #entrada de datos
         lbl = Label(frame2, text=("Llene los siguiente campos"))
-        lbl1.place(x=6, y=130)
+        lbl.place(x=6, y=30)
 
         lbl1 = Label(frame2, text="Id: ")
         lbl1.place(x=6, y=130)
@@ -55,7 +55,7 @@ class ventana (Frame):
         self.txtSerie=Entry(frame2)
         self.txtSerie.place(x=6, y=250, width=350, height=50)
 
-        lbl3 = Label(frame2, text="Serie: ")
+        lbl3 = Label(frame2, text="Service Tag: ")
         lbl3.place(x=6, y=330)
 
         self.txtCampaña=Entry(frame2)
@@ -66,3 +66,11 @@ class ventana (Frame):
 
         self.txtCampaña=Entry(frame2)
         self.txtCampaña.place(x=6, y=450, width=350, height=50)
+
+        #Bonton de Guardar
+        self.btnNuevo=Button(frame2, text="Guardar", command=self.fNuevo, bg="#33CC66", fg="white")
+        self.btnNuevo.place(x=125, y=530, width=110, height=50)
+        
+        #Bonton de Cancelar
+        self.btnNuevo=Button(frame2, text="Cancelar", command=self.fNuevo, bg="red", fg="white")
+        self.btnNuevo.place(x=245, y=530, width=110, height=50)
